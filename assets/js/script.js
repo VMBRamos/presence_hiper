@@ -59,7 +59,7 @@ function sendData(dados) {
         empresa: dados.empresa
     };
 
-    const url = 'https://webhook.site/9dcd8afe-9ce6-4c31-ba78-c24ae347d899';
+    const url = 'https://webhook.site/4de391ef-042c-480a-9020-70951804fa6a';
 
     fetch(url, {
         mode: 'no-cors',
@@ -70,6 +70,7 @@ function sendData(dados) {
         body: JSON.stringify(data)
     })
         .then(data => {
+            alert("Dados enviados!");
             console.log('Dados enviados:', data);
         })
         .catch(error => {
